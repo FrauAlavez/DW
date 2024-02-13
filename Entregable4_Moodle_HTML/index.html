@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de página</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        nav {
+            display: flex; justify-content: space-around;
+        }
+
+        a {
+            text-decoration: none;
+            color: #322E2F;
+            text-transform: uppercase;
+            margin: auto;
+        }
+        fieldset {
+            border: none;
+        }
+
+        #contenedor {
+            display: flex;
+            background-color: #C7DDCC;
+            justify-content: space-between;
+            align-items: flex-start;
+            
+
+        }
+
+        section {
+            background-color: #12A4D9;
+            width: 70%; height: 200px;
+            padding: 20px;
+        }
+
+        aside {
+            display: block;
+            background-color: #D9138A;
+            width: 30%; height: 200px;
+            padding: 20px;
+        } 
+
+        
+    </style>
+</head>
+<body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: #75C9B7;"> 
+    <header style="background-color: #322E2F;">
+        <h1 style="color: #C7DDCC;">
+            ENCABEZADO NIVEL 1
+        </h1>
+        <nav style="background-color: #C7DDCC;" style="justify-content: space-between;" >
+            <a href="#">ENLACE 1</a>
+            <a href="#">ENLACE 2</a>
+            <a href="#">ENLACE 3</a>
+            <a href="#">ENLACE 4</a>
+        </nav>
+    </header>
+    <br>
+    
+    <div id="contenedor">
+
+            <section>
+                <header>
+                    <h2>Encabezado nivel 2</h2>
+                    <p>Aquí va texto del primer <b>párrafo</b></p>
+                    <p>Aquí va texto del segundo párrafo.</p>
+                </header>
+            </section>
+        
+            <aside>
+                <h2>Apartado</h2>
+                <form action="">
+                    <fieldset>
+                        <legend>Elige una opción</legend>
+                        <br>
+                        <label for="">Opción 1</label>
+                            <input type="checkbox" name="Check 1" id="ch1">
+                        <label for="">Opción 2</label>
+                            <input type="checkbox" name="Check 2" id="ch2">
+                        <label for="">Opción 3</label>    
+                            <input type="checkbox" name="Check 3" id="ch3">
+                        <br><br>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>         
+            </aside>
+    </div>    
+    
+    <footer style= "background-color: #E2D810;width: 100%; height: 60px;">
+        <p>Sección de información de contacto, derechos de autor, etc. </p>
+    </footer>
+</body>
+</html>
